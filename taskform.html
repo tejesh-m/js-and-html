@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Form</title>
+    <style>
+         table, th, td {
+            border: 1px solid black;
+            /* border-radius: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Last Name</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td><input type="text"> State <input type="text"></td>
+        </tr>
+        <tr>
+            <th>Zip/Postal Code</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Country</th>
+            <td><select id="food" >
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="China">China</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th>Phone(County code, Area code, number)</th>
+            <td>
+                (+ <input type="text">) <input type="text"> - <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Birthdate</th>
+            <td>Month<input type="text"> Day <input type="text"> Year(4digit) <input type="text"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>
+                <select name="Gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Starting date</th>
+            <td>
+                <input type="radio">Spring 2006
+                <input type="radio">Summer 2006
+            
+            </td>
+        </tr>
+        <tr>
+            <th>Comments/Questions</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+           <td>
+            <button>Submit</button>
+            <button>Clear this form</button>
+           </td>
+        </tr>
+    </table>
+</body>
+</html>

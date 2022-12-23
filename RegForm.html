@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .reg {
+            text-align: left;
+        }
+
+        .reg1 {
+            background-color: #fff;
+        }
+
+        body {
+            background-color: #4169e1;
+        }
+
+        .reg1 .contact_details .reg .title {
+            font-style: 20px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .reg1 .contact_details .reg .title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            border-radius: 5px;
+            background: #4169e1;
+        }
+    </style>
+</head>
+<br> <br> <br>
+
+<body>
+    <table class="reg1" align="center">
+        <form id="contact_details" action="#">
+            <tr>
+                <th class="reg"> <span class="title">Registration</span></th>
+            </tr>
+            <tr>
+                <th class="reg"> Personal details</th>
+            </tr>
+            <tr>
+                <th class="reg"> <label for="fullname"> Full Name </label> </th>
+                <th class="reg"><label for="dob"> Date of Birth </label></th>
+                <th class="reg"><label for="email">Email </label></th>
+            </tr>
+            <tr>
+                <th class="reg"> <input type="text" id="fullName" placeholder="Enter your name" required /> </th>
+                <th class="reg"> <input type="text" id="dob" placeholder="Enter birth date" required /></th>
+                <th class="reg"> <input type="text" id="email" placeholder="Enter your email" required /></th>
+            </tr>
+            <tr>
+                <th class="reg"><label for="mobileNumber">Mobile number </label></th>
+                <th class="reg"> <label for="gender">Gender </label></th>
+                <th class="reg"> <label for="occupation">Occupation </label></th>
+            </tr>
+            <tr>
+                <th class="reg"> <input type="text" id="mobileNumber" placeholder="Enter mobile number" required />
+                </th>
+                <th class="reg"> <input type="text" id="gender" placeholder="Enter your gender" required /></th>
+                <th class="reg"> <input type="text" id="occupation" placeholder="Enter occupation" required /></th>
+            </tr>
+            <tr>
+                <th class="reg"> Identity Details</th>
+            </tr>
+            <tr>
+                <th class="reg"> <label for="idType">ID Type </label> </th>
+                <th class="reg"> <label for="idNumber">ID Number </label></th>
+                <th class="reg"> <label for="issueAuth">Issue Authority </label></th>
+            </tr>
+            <tr>
+                <th class="reg"> <input type="text" id="idType" placeholder="Enter ID type" required /> </th>
+                <th class="reg"> <input type="text" id="idNumber" placeholder="Enter ID number" required /></th>
+                <th class="reg"> <input type="text" id="issueAuth" placeholder="Enter issue department" required /></th>
+            </tr>
+            <tr>
+                <th class="reg"> <label for="issueDate">Issue Date </label></th>
+                <th class="reg"> <label for="issueState">Issue State </label></th>
+                <th class="reg"> <label for="expiryDate">Expiry Date </label></th>
+            </tr>
+            <tr>
+                <th class="reg"> <input type="text" id="issueDate" placeholder="Enter ID issue date" required /> </th>
+                <th class="reg"> <input type="text" id="issueState" placeholder="Enter ID issue state" required /></th>
+                <th class="reg"> <input type="text" id="expiryDate" placeholder="Enter ID expiry date" required /></th>
+            </tr>
+
+            <td>
+                <input type="submit" value="Next ->" />
+                <a href="success.html"></a>
+            </td>
+
+
+        </form>
+
+
+    </table>
+</body>
+
+<script>
+    const reg_details = document.getElementById("contact_details");
+    reg_details.addEventListener("submit", async (as) => {
+        as.preventDefault();
+        var firstName = document.getElementById("fullName").value;
+        var dob = document.getElementById("dob").value;
+        var email = document.getElementById("email").value;
+        var mobileNumber = document.getElementById("mobileNumber").value;
+        var gender = document.getElementById("gender").value;
+        var occupation = document.getElementById("occupation").value;
+        var idType = document.getElementById("idType").value;
+        var idNumber = document.getElementById("idNumber").value;
+        var issueAuth = document.getElementById("issueAuth").value;
+        var issueDate = document.getElementById("issueDate").value;
+        var issueState = document.getElementById("issueState").value;
+        var expiryDate = document.getElementById("expiryDate").value;
+
+        console.log(firstName);
+        console.log(dob);
+        console.log(email);
+        console.log(mobileNumber);
+        console.log(gender);
+        console.log(occupation);
+        console.log(idType);
+        console.log(idNumber);
+        console.log(issueAuth);
+        console.log(issueDate);
+        console.log(issueState);
+        console.log(expiryDate);
+
+    });
+</script>
+
+</html>

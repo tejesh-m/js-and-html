@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Userform</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        th, td{
+            background-color: #F5FA96;
+        }
+    </style>
+    <script src="user.js"></script>
+</head>
+<body>
+    <div style="border-color: red; border-radius: 2; border-width: 2 px; border-style: dotted;">
+        <h1 style="text-align: center;">This is header</h1>
+    </div>
+    <br>
+    <div style="border-color: red; border-radius: 2; border-width: 2 px; border-style: dotted;
+     align-items: center;">
+        <h2>Enter your details</h2>
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name"/>
+        <br>
+        <label for="age">Age:</label>
+        <input id="age" type="text" placeholder="Enter your age"/>
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email"/>
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" value="Male" name="gender" id="gender"/>Male
+        <input type="radio" value="Female" name="gender" id="gender"/>Female
+        <br>
+        <input type="text" name="blur" id="blur" onblur="BlurEvent()" placeholder="this is a dummy textbox">
+        <br>
+        <select id="food" onchange="onChangeEvent()">
+            <option value="pizza">Pizza</option>
+            <option value="Biryani">Biryani</option>
+            <option value="Burger">Burger</option>
+        </select>
+        <p id="demo"></p>
+        <br>
+        <input type="text" id="focus" onfocus="onFocusEvent(this.id)" placeholder="Enter your dob">
+        <button>Submit</button>
+        <div>
+            <table style="border-style: groove; border: 5;">
+                <tr>
+                    <th>Emp_ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Department</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Donald</td>
+                    <td>Trump</td>
+                    <td>Politics</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Narendra</td>
+                    <td>Modi</td>
+                    <td>Politics</td>
+                    <td>India</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Sachin</td>
+                    <td>Tendulkar</td>
+                    <td>Sports</td>
+                    <td>India</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Jon</td>
+                    <td>Snow</td>
+                    <td>Actor</td>
+                    <td>USA</td>
+                </tr>
+            </table>
+        </div>
+        <div style="text-align: justify;">
+            <!-- ctrl + / to comment -->
+            <!-- un-orderedList -->
+            <ul>
+                <li>Paneer</li>
+                <li>Onion</li>
+                <li>Capsicum</li>
+            </ul>
+            <!-- orderedList -->
+            <ol>
+                <li>Paneer</li>
+                <li>Onion</li>
+                <li>Capsicum</li>
+
+            </ol>
+        </div>
+    </div>
+    <img src="dog1.webp" >
+    <center>
+        <a href="https://www.akc.org/dog-breeds/golden-retriever/">Know more about Golden retrievers</a>
+    </center>
+</body>
+</html>
